@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mystyle.css">
+    <title>Temperature Dashboard</title>
+</head>
+<body>
+    <div class="dashboard">
+    <h1>Temperature Dashboard</h1>
+    <h2>Convert a Temperature</h2>
+    <input type="text" id="temperatureInput" placeholder="Enter a temperature" />
+      <button onclick="convertToF()">Celsius ➡ Fahrenheit</button>
+      <button onclick="convertToC()">Fahrenheit ➡ Celsius</button>
+      <div id="result"></div>
+    <div id="thermometer"></div>
+    <button onclick="fillThermo()">Fill the Thermo</button>
+    <div>
+      
+      
+    </div>
+  </div>
+
+    <div class="dashboard">
+    <h2>Conversion Table (0 to 100 °C)</h2>
+    <button onclick="generateTable()">Generate Table</button>
+    <table id="conversionTable">
+      <thead>
+        <tr>
+          <th>Celsius (°C)</th>
+          <th>Fahrenheit (°F)</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+  </div>
+
+    <script src="./loops.js"></script>
+</body>
+</html>
